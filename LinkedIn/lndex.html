@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ln.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dr+Sugiyama&family=Gilda+Display&family=Signika+Negative&display=swap"
+        rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navlft">
+            <a href="ln.html" class="logo"><img src="../LinkedIn/logo.png" alt=""></a>
+            <div class="searchbar">
+                <img src="../LinkedIn/search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navcenter">
+            <ul>
+                <li><a href="#" class="active-link"><img src="../LinkedIn/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="../LinkedIn/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="../LinkedIn/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="../LinkedIn/message.png"><span>Message</span></a></li>
+                <li><a href="#"><img src="../LinkedIn/notification.png"><span>Notification</span></a></li>
+            </ul>
+        </div>
+        <div class="navrgt">
+            <div class="online">
+            <img src="../LinkedIn/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+                
+            </div>
+        </div>
+
+<!-- --------------------profile menu-------------------- -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="../LinkedIn/user-1.png" alt="">
+                    <div>
+                        <h3>Rayan Royands</h3>
+                        <a href="ln2.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                 <a href="#" class="profile-menu-link">
+                    <img src="../LinkedIn/feedback.png" alt="">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                 </a>
+                 <a href="#" class="profile-menu-link">
+                    <img src="../LinkedIn/setting.png" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                 </a>
+                 <a href="#" class="profile-menu-link">
+                    <img src="../LinkedIn/help.png" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                 </a>
+                 <a href="#" class="profile-menu-link">
+                    <img src="../LinkedIn/display.png" alt="">
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                 </a>
+                 <a href="#" class="profile-menu-link">
+                    <img src="../LinkedIn/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                 </a>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <!-- ------------Nav bar End------------ -->
+  
+    <div class="container">
+        <div class="lftcontent">
+            <div class="profile-box">
+                <img src="../LinkedIn/linked profile (2).png" alt="">
+                <div class="profile-info">
+                    <img src="../LinkedIn/user-1.png" alt="">
+                    <h1>John Doe</h1>
+                    <h3>Web Developer</h3>
+                    <ul>
+                        <li>Your Profile Views <span>77</span></li>
+                        <li>Your Post Views <span>260</span></li>
+                        <li>Your Connection <span>387</span></li>
+                    </ul>
+                </div>
+                <div class="profile-link">
+                    <a href="#"><img src="../LinkedIn/items.png">My Items</a>
+                    <a href="#"><img src="../LinkedIn/premium.png">Try Premium</a>
+                </div>
+                </div>
+                <div class="activity" id="sidebar-activity">
+                    <h3>Recent</h3>
+                    <a href="#"><img src="../LinkedIn/recent.png" alt="">Web Development</a>
+                    <a href="#"><img src="../LinkedIn/recent.png" alt="">User Interface</a>
+                    <a href="#"><img src="../LinkedIn/recent.png" alt="">Online Learning</a>
+                    
+                    <h3>GROUPS</h3>
+                    <a href="#"><img src="../LinkedIn/group.png" alt="">Web Design Group</a>
+                    <a href="#"><img src="../LinkedIn/group.png" alt="">HTML & CSS </a>
+                    <a href="#"><img src="../LinkedIn/group.png" alt=""> Learn Code online</a>
+                    <h3>HASTAG</h3>
+                    <a href="#"><img src="../LinkedIn/hashtag.png" alt="">Web Development</a>
+                    <a href="#"><img src="../LinkedIn/hashtag.png" alt="">User Interface</a>
+                    <a href="#"><img src="../LinkedIn/hashtag.png" alt="">Onlinelearning</a>
+
+
+                
+            </div>
+            <p id="show-more-link" onclick="toggleActivity()">Show more <b>+</b></p>
+        </div>
+
+<!-- //////////////main content//////////// -->
+
+
+
+        <div class="middlecontent">
+
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="../LinkedIn/user-1.png" alt="">
+                    <textarea  cols="2" placeholder="Write a post"></textarea>
+                </div>
+                <div class="create-post-link">
+                    <li><img src="../LinkedIn/photo.png">Photo</li>
+                    <li><img src="../LinkedIn/video.png">Video</li>
+                    <li><img src="../LinkedIn/event.png">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREAs-qOgTiEy0ljVuU376PG94BQk0xQm1Tl8c8JJM1Xg&usqp=CAU&ec=48665699">
+                    <div>
+                        <h1>John Doe</h1>
+                        <small>Founder and CEO of Allives Group | Rahat Invester</small>
+                        <small>1 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita vel sunt neque dignissimos quam, modi possimus, voluptate quaerat, voluptatibus accusamus inventore. Suscipit tempore officia libero doloremque optio nulla praesentium natus!</p>
+                <img src="https://media.istockphoto.com/id/1355030282/photo/shot-of-a-mature-businessman-using-a-laptop-in-a-modern-office.jpg?s=612x612&w=0&k=20&c=OItGhzI7XeKceicohbtU0q2ss0aFoMhF3kZfTYPXFLE="width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="../LinkedIn/thumbsup.png" alt="">
+                        <img src="../LinkedIn/love.png" alt="">
+                        <img src="../LinkedIn/clap.png" alt="">
+                        <span class="liked-user">Ekansh Bisen and 81 others</span>
+                    </div>
+                    <div>
+                        <span>33 comments... 50 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="../LinkedIn/user-1.png" class="post-activity-user-icon">
+                        <img src="../LinkedIn/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="../LinkedIn/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="../LinkedIn/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="../LinkedIn/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="../LinkedIn/send.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+                
+            </div>
+    
+<div class="post">
+    <div class="post-author">
+        <img
+            src="../LinkedIn/user-4.png">
+        <div>
+            <h1>Robert Downey</h1>
+            <small>Founder and CEO of Allives Group | Rahat Invester</small>
+            <small>1 hours ago</small>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita vel sunt neque dignissimos quam, modi
+        possimus, voluptate quaerat, voluptatibus accusamus inventore. Suscipit tempore officia libero doloremque optio
+        nulla praesentium natus!</p>
+    <img src="../LinkedIn/post-image-1.png"
+        width="100%">
+
+    <div class="post-stats">
+        <div>
+            <img src="../LinkedIn/thumbsup.png" alt="">
+            <img src="../LinkedIn/love.png" alt="">
+            <img src="../LinkedIn/clap.png" alt="">
+            <span class="liked-user">Ekansh Bisen and 81 others</span>
+        </div>
+        <div>
+            <span>33 comments... 50 shares</span>
+        </div>
+    </div>
+    <div class="post-activity">
+        <div>
+            <img src="../LinkedIn/user-1.png" class="post-activity-user-icon">
+            <img src="../LinkedIn/down-arrow.png" class="post-activity-arrow-icon">
+        </div>
+        <div class="post-activity-link">
+            <img src="../LinkedIn/like.png" alt="">
+            <span>Like</span>
+        </div>
+        <div class="post-activity-link">
+            <img src="../LinkedIn/comment.png" alt="">
+            <span>Comment</span>
+        </div>
+        <div class="post-activity-link">
+            <img src="../LinkedIn/share.png" alt="">
+            <span>Share</span>
+        </div>
+        <div class="post-activity-link">
+            <img src="../LinkedIn/send.png" alt="">
+            <span>Send</span>
+        </div>
+    </div>
+
+</div>
+
+
+        <div class="post">
+            <div class="post-author">
+                <img
+                    src="../LinkedIn/user-2.png">
+                <div>
+                    <h1>John Doe</h1>
+                    <small>Founder and CEO of Allives Group | Rahat Invester</small>
+                    <small>1 hours ago</small>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita vel sunt neque dignissimos quam, modi
+                possimus, voluptate quaerat, voluptatibus accusamus inventore. Suscipit tempore officia libero doloremque optio
+                nulla praesentium natus!</p>
+            <img src="../LinkedIn/post-image-4.png"
+                width="100%">
+        
+            <div class="post-stats">
+                <div>
+                    <img src="../LinkedIn/thumbsup.png" alt="">
+                    <img src="../LinkedIn/love.png" alt="">
+                    <img src="../LinkedIn/clap.png" alt="">
+                    <span class="liked-user">Ekansh Bisen and 81 others</span>
+                </div>
+                <div>
+                    <span>33 comments... 50 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="../LinkedIn/user-1.png" class="post-activity-user-icon">
+                    <img src="../LinkedIn/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="../LinkedIn/like.png" alt="">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="../LinkedIn/comment.png" alt="">
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="../LinkedIn/share.png" alt="">
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="../LinkedIn/send.png" alt="">
+                    <span>Send</span>
+                </div>
+            </div>
+        
+        </div>
+
+        </div>
+
+<!-- //////////////////Right content//////////////         -->
+        <div class="rgtcontent">
+            <div class="news">
+                <img src="../LinkedIn/more.png" class="info-icon" alt="">
+                <h3>Trending News</h3>
+                <a href="#">High demand for skilled manpower</a>
+                <span>1D ago & middot; 333 readers</span>
+                <a href="#">Careers growing horizontally too</a>
+                <span>12D ago & middot; 19,333 readers</span>
+                <a href="#">Less work visa for us , more for IND</a>
+                <span>7D ago & middot; 10,009 readers</span>
+                <a href="#">Bill Gates is the the 3rd richest person</a>
+                <span>9D ago & middot; 1,333 readers</span>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+
+
+            <div class="sidebar-ad">
+                <small>Ad </small>
+                <p>Master the 5 principle of Web Design</p>
+                <div>
+                    <img src="../LinkedIn/user-1.png" alt="">
+                    <img src="https://img.freepik.com/free-icon/mac-os_318-10374.jpg" alt="">
+                </div>
+                <b>Brand and Demand in Apple</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessiblity</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+                <div class="copyright-msg">
+                    <img src="../LinkedIn/logo.png" alt="">
+                    <p>Linkedup @170; 2023. All right reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script src="ln.js"></script>
+
+</body>
+</html>
